@@ -115,7 +115,11 @@ fetch('stations.json').then(r => r.json()).then(data => {
         el('div', { class: 'meta' }, [s.codec, s.bitrate && `${s.bitrate} kbps`, s.state, ...(s.tags || []).slice(0, 3)].filter(Boolean).join(' · ')),
         copyRow('Stream', s.stream),
         copyRow('Logo', logoUrl),
-        el('div', { class: 'actions' }, play, el('a', { class: 'btn', href: s.homepage, rel: 'noopener' }, 'Station website'))
+        el('div', { class: 'actions' }, play,
+          el('a', { class: 'btn', href: s.homepage, rel: 'noopener' }, 'Station website'),
+          ...(s.radiobrowser
+            ? [el('a', { class: 'btn', href: `https://www.radio-browser.info/history/${s.radiobrowser}`, rel: 'noopener' }, 'RadioBrowser')]
+            : []))
       )
     ));
   }

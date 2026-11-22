@@ -29,6 +29,7 @@
       "codec": "AAC",
       "bitrate": 64,
       "homepage": "https://www.sacredheartradio.com",
+      "radiobrowser": "961fa669-0601-11e8-ae97-52543be04c81",
       "logo": "logos/sacred-heart-radio.png",
       "logo_source": "Sacred Heart Radio app icon on Google Play",
       "country": "US",
@@ -92,6 +93,7 @@
       "codec": "AAC",
       "bitrate": 128,
       "homepage": "https://www.wbaa.org",
+      "radiobrowser": "4df59538-4c43-4db5-95b9-e0d09e804bde",
       "logo": "logos/wbaa-classical.png",
       "logo_source": "WBAA app icon on Google Play, with a CLASSICAL label added",
       "country": "US",
@@ -111,6 +113,7 @@
       "codec": "AAC",
       "bitrate": 128,
       "homepage": "https://www.wbaa.org/wbaa-jazz",
+      "radiobrowser": "960b39cb-0601-11e8-ae97-52543be04c81",
       "logo": "logos/wbaa-jazz.png",
       "logo_source": "WBAA app icon on Google Play, with a JAZZ label added",
       "country": "US",
@@ -130,6 +133,7 @@
       "codec": "MP3",
       "bitrate": 64,
       "homepage": "https://www.wibc.com",
+      "radiobrowser": "9641ff6b-0601-11e8-ae97-52543be04c81",
       "logo": "logos/wibc.png",
       "logo_source": "WIBC app icon on Google Play",
       "country": "US",
@@ -140,7 +144,7 @@
         "talk",
         "indianapolis"
       ],
-      "notes": "StreamTheWorld redirect URL. AAC version (32 kbps HE-AAC v2): https://playerservices.streamtheworld.com/api/livestream-redirect/WIBCFMAAC.aac. RadioBrowser entry: 9641ff6b-0601-11e8-ae97-52543be04c81."
+      "notes": "StreamTheWorld redirect URL. AAC version (32 kbps HE-AAC v2): https://playerservices.streamtheworld.com/api/livestream-redirect/WIBCFMAAC.aac"
     }
   ]
 }

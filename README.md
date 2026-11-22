@@ -17,7 +17,7 @@ Working stream URLs and square 512×512 logos for a few radio stations, hosted o
 ## Adding a station
 
 1. Put a square PNG logo (512×512 is ideal) in `logos/`.
-2. Add an entry to `stations.json`.
+2. Add an entry to `stations.json`. If the station is listed on [RadioBrowser](https://www.radio-browser.info), put its station UUID in `radiobrowser` and the page will link to it.
 3. Run `python3 build.py` to regenerate `radio.m3u`.
 4. Commit and push. Pages updates in a minute or two.
 

@@ -13,6 +13,8 @@ Working stream URLs and square 512×512 logos for a few radio stations, hosted o
 | WBAA Classical | `https://wfyi-live.streamguys1.com/wbaa-classical-aac` |
 | WBAA Jazz | `https://wfyi-live.streamguys1.com/wbaa-jazz-aac` |
 | WIBC 93.1 FM | `https://playerservices.streamtheworld.com/api/livestream-redirect/WIBCFM.mp3` |
+| 106.1 The River (WWWY) | `https://live.amperwave.net/direct/findlay-wwwyfmmp3-ibc3` |
+| WRBI 103.9 FM | `https://ice41.securenetsystems.net/WRBI` |
 
 ## Adding a station
 

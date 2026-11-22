@@ -145,6 +145,44 @@
         "indianapolis"
       ],
       "notes": "StreamTheWorld redirect URL. AAC version (32 kbps HE-AAC v2): https://playerservices.streamtheworld.com/api/livestream-redirect/WIBCFMAAC.aac"
+    },
+    {
+      "id": "wwwy",
+      "name": "106.1 The River (WWWY)",
+      "tagline": "Columbus, Indiana",
+      "stream": "https://live.amperwave.net/direct/findlay-wwwyfmmp3-ibc3",
+      "codec": "MP3",
+      "bitrate": 64,
+      "homepage": "https://www.1061theriver.com",
+      "logo": "logos/wwwy.png",
+      "logo_source": "106.1 The River app icon on Google Play, on white",
+      "country": "US",
+      "state": "Indiana",
+      "language": "english",
+      "tags": [
+        "classic hits",
+        "classic rock"
+      ],
+      "notes": "Amperwave direct stream (from player.amperwave.net/911 config). AAC: https://live.amperwave.net/direct/findlay-wwwyfmaac-ibc3. Don't save the prod-*.amperwave.net session URLs from the .m3u playlist."
+    },
+    {
+      "id": "wrbi",
+      "name": "WRBI 103.9 FM",
+      "tagline": "Southeastern Indiana's First Choice",
+      "stream": "https://ice41.securenetsystems.net/WRBI",
+      "codec": "AAC",
+      "bitrate": 32,
+      "homepage": "https://wrbiradio.com",
+      "logo": "logos/wrbi.png",
+      "logo_source": "WordPress site icon (512×512) from wrbiradio.com",
+      "country": "US",
+      "state": "Indiana",
+      "language": "english",
+      "tags": [
+        "country",
+        "local news"
+      ],
+      "notes": "Batesville, IN. 32 kbps HE-AAC v2 is the only main-station stream. Sister channel WRBI2 (rock): https://ice41.securenetsystems.net/WRBI2"
     }
   ]
 }

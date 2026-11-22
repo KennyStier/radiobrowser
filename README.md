@@ -10,6 +10,8 @@ Working stream URLs and square 512×512 logos for a few radio stations, hosted o
 | Sacred Heart Catholic Radio (WNOP 740 AM) | `https://ice10.securenetsystems.net/WNOP2` |
 | Tree Country 1330 (WTRE) | `https://wtre.streamguys1.com/live` |
 | Ave Maria Radio | `https://streaming.live365.com/a57262` |
+| WBAA Classical | `https://wfyi-live.streamguys1.com/wbaa-classical-aac` |
+| WBAA Jazz | `https://wfyi-live.streamguys1.com/wbaa-jazz-aac` |
 
 ## Adding a station
 

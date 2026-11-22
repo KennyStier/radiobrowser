@@ -7,3 +7,7 @@ https://ice10.securenetsystems.net/WNOP2
 https://wtre.streamguys1.com/live
 #EXTINF:-1 tvg-logo="https://kennystier.github.io/radiobrowser/logos/ave-maria-radio.png" group-title="Radio",Ave Maria Radio
 https://streaming.live365.com/a57262
+#EXTINF:-1 tvg-logo="https://kennystier.github.io/radiobrowser/logos/wbaa-classical.png" group-title="Radio",WBAA Classical
+https://wfyi-live.streamguys1.com/wbaa-classical-aac
+#EXTINF:-1 tvg-logo="https://kennystier.github.io/radiobrowser/logos/wbaa-jazz.png" group-title="Radio",WBAA Jazz
+https://wfyi-live.streamguys1.com/wbaa-jazz-aac

@@ -64,6 +64,38 @@
       "language": "english",
       "tags": ["catholic", "christian", "religious", "talk"],
       "notes": "Live365 stream. Sister channel Annunciation Radio is https://streaming.live365.com/a21358 (128 kbps)."
+    },
+    {
+      "id": "wbaa-classical",
+      "name": "WBAA Classical",
+      "tagline": "West Lafayette, Indiana",
+      "stream": "https://wfyi-live.streamguys1.com/wbaa-classical-aac",
+      "codec": "AAC",
+      "bitrate": 128,
+      "homepage": "https://www.wbaa.org",
+      "logo": "logos/wbaa-classical.png",
+      "logo_source": "WBAA app icon on Google Play, with a CLASSICAL label added",
+      "country": "US",
+      "state": "Indiana",
+      "language": "english",
+      "tags": ["classical", "public radio"],
+      "notes": "Operated by WFYI. MP3 version: https://wfyi-live.streamguys1.com/wbaa-classical"
+    },
+    {
+      "id": "wbaa-jazz",
+      "name": "WBAA Jazz",
+      "tagline": "West Lafayette, Indiana",
+      "stream": "https://wfyi-live.streamguys1.com/wbaa-jazz-aac",
+      "codec": "AAC",
+      "bitrate": 128,
+      "homepage": "https://www.wbaa.org/wbaa-jazz",
+      "logo": "logos/wbaa-jazz.png",
+      "logo_source": "WBAA app icon on Google Play, with a JAZZ label added",
+      "country": "US",
+      "state": "Indiana",
+      "language": "english",
+      "tags": ["jazz", "public radio"],
+      "notes": "Operated by WFYI. MP3 version: https://wfyi-live.streamguys1.com/wbaa-jazz"
     }
   ]
 }

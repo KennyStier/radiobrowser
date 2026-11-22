@@ -14,7 +14,11 @@
       "country": "US",
       "state": "Indiana",
       "language": "english",
-      "tags": ["adult album alternative", "aaa", "rock"],
+      "tags": [
+        "adult album alternative",
+        "aaa",
+        "rock"
+      ],
       "notes": "StreamTheWorld redirect URL; it picks a live relay server on each connect. Never save a numbered NNNNN.live.streamtheworld.com address, because those stop working."
     },
     {
@@ -30,7 +34,13 @@
       "country": "US",
       "state": "Kentucky",
       "language": "english",
-      "tags": ["catholic", "christian", "religious", "talk", "ewtn"],
+      "tags": [
+        "catholic",
+        "christian",
+        "religious",
+        "talk",
+        "ewtn"
+      ],
       "notes": "Licensed to Newport, KY; serves the Cincinnati area."
     },
     {
@@ -46,7 +56,11 @@
       "country": "US",
       "state": "Indiana",
       "language": "english",
-      "tags": ["country", "local news", "community"],
+      "tags": [
+        "country",
+        "local news",
+        "community"
+      ],
       "notes": "StreamGuys stream; the site's link adds a ?_ic2= tracking number, which isn't needed."
     },
     {
@@ -62,7 +76,12 @@
       "country": "US",
       "state": "Michigan",
       "language": "english",
-      "tags": ["catholic", "christian", "religious", "talk"],
+      "tags": [
+        "catholic",
+        "christian",
+        "religious",
+        "talk"
+      ],
       "notes": "Live365 stream. Sister channel Annunciation Radio is https://streaming.live365.com/a21358 (128 kbps)."
     },
     {
@@ -78,7 +97,10 @@
       "country": "US",
       "state": "Indiana",
       "language": "english",
-      "tags": ["classical", "public radio"],
+      "tags": [
+        "classical",
+        "public radio"
+      ],
       "notes": "Operated by WFYI. MP3 version: https://wfyi-live.streamguys1.com/wbaa-classical"
     },
     {
@@ -94,8 +116,31 @@
       "country": "US",
       "state": "Indiana",
       "language": "english",
-      "tags": ["jazz", "public radio"],
+      "tags": [
+        "jazz",
+        "public radio"
+      ],
       "notes": "Operated by WFYI. MP3 version: https://wfyi-live.streamguys1.com/wbaa-jazz"
+    },
+    {
+      "id": "wibc",
+      "name": "WIBC 93.1 FM",
+      "tagline": "Indy's Mobile News",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/WIBCFM.mp3",
+      "codec": "MP3",
+      "bitrate": 64,
+      "homepage": "https://www.wibc.com",
+      "logo": "logos/wibc.png",
+      "logo_source": "WIBC app icon on Google Play",
+      "country": "US",
+      "state": "Indiana",
+      "language": "english",
+      "tags": [
+        "news",
+        "talk",
+        "indianapolis"
+      ],
+      "notes": "StreamTheWorld redirect URL. AAC version (32 kbps HE-AAC v2): https://playerservices.streamtheworld.com/api/livestream-redirect/WIBCFMAAC.aac. RadioBrowser entry: 9641ff6b-0601-11e8-ae97-52543be04c81."
     }
   ]
 }

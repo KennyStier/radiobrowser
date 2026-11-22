@@ -11,3 +11,5 @@ https://streaming.live365.com/a57262
 https://wfyi-live.streamguys1.com/wbaa-classical-aac
 #EXTINF:-1 tvg-logo="https://kennystier.github.io/radiobrowser/logos/wbaa-jazz.png" group-title="Radio",WBAA Jazz
 https://wfyi-live.streamguys1.com/wbaa-jazz-aac
+#EXTINF:-1 tvg-logo="https://kennystier.github.io/radiobrowser/logos/wibc.png" group-title="Radio",WIBC 93.1 FM
+https://playerservices.streamtheworld.com/api/livestream-redirect/WIBCFM.mp3

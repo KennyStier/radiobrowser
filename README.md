@@ -12,6 +12,7 @@ Working stream URLs and square 512×512 logos for a few radio stations, hosted o
 | Ave Maria Radio | `https://streaming.live365.com/a57262` |
 | WBAA Classical | `https://wfyi-live.streamguys1.com/wbaa-classical-aac` |
 | WBAA Jazz | `https://wfyi-live.streamguys1.com/wbaa-jazz-aac` |
+| WIBC 93.1 FM | `https://playerservices.streamtheworld.com/api/livestream-redirect/WIBCFM.mp3` |
 
 ## Adding a station
 

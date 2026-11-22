@@ -27,3 +27,12 @@ Working stream URLs and square 512×512 logos for a few radio stations, hosted o
 
 - StreamTheWorld stations: use the `playerservices.streamtheworld.com/api/livestream-redirect/<MOUNT>.aac` form. Numbered relay hosts (`12345.live.streamtheworld.com`) change and start returning 403.
 - Logos belong to their stations and are used here only to identify them.
+
+## Submitting to RadioBrowser
+
+Run `python3 export_radiobrowser.py`. It writes two files to `radiobrowser-export/`:
+
+- `update-existing.json`: stations already on RadioBrowser. Add it as `src/us/<name>.json` in a merge request to [radiobrowser/radio-database](https://gitlab.com/radiobrowser/radio-database). Its CI requires exactly these fields, so don't add or remove any.
+- `new-stations.json`: stations not on RadioBrowser yet. The GitLab repo can only change or delete existing stations, so add these at <https://www.radio-browser.info/add>, then put each new UUID in `radiobrowser` in `stations.json`.
+
+Coordinates are the city of license (Ave Maria Radio: its Ann Arbor studios), from OpenStreetMap, to 4 decimal places.

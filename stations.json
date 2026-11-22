@@ -38,12 +38,12 @@
       "logo": "logos/sacred-heart-radio.png",
       "logo_source": "Sacred Heart Radio app icon on Google Play",
       "country": "US",
-      "state": "Kentucky",
+      "state": "Ohio",
       "city": "Cincinnati, OH",
-      "iso_3166_2": "US-KY",
+      "iso_3166_2": "US-OH",
       "geo_lat": 39.1048,
       "geo_long": -84.5119,
-      "radiobrowser_name": "WNOP 740 Sacred Heart Radio - Newport, KY",
+      "radiobrowser_name": "WNOP 740 Sacred Heart Radio - Cincinnati, OH",
       "language": "english",
       "tags": [
         "catholic",
@@ -52,7 +52,7 @@
         "talk",
         "ewtn"
       ],
-      "notes": "Licensed to Newport, KY; serves the Cincinnati area."
+      "notes": "Licensed to Newport, KY; studios in Cincinnati, OH, which is what the location fields use."
     },
     {
       "id": "wtre",

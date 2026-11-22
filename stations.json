@@ -48,6 +48,22 @@
       "language": "english",
       "tags": ["country", "local news", "community"],
       "notes": "StreamGuys stream; the site's link adds a ?_ic2= tracking number, which isn't needed."
+    },
+    {
+      "id": "ave-maria-radio",
+      "name": "Ave Maria Radio",
+      "tagline": "Catholic radio from Ann Arbor, Michigan",
+      "stream": "https://streaming.live365.com/a57262",
+      "codec": "MP3",
+      "bitrate": 320,
+      "homepage": "https://www.avemariaradio.net",
+      "logo": "logos/ave-maria-radio.png",
+      "logo_source": "ave_logo_transparent.png from avemariaradio.net, placed on a white square",
+      "country": "US",
+      "state": "Michigan",
+      "language": "english",
+      "tags": ["catholic", "christian", "religious", "talk"],
+      "notes": "Live365 stream. Sister channel Annunciation Radio is https://streaming.live365.com/a21358 (128 kbps)."
     }
   ]
 }

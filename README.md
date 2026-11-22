@@ -8,6 +8,7 @@ Working stream URLs and square 512×512 logos for a few radio stations, hosted o
 |---|---|
 | 92.3 WTTS | `https://playerservices.streamtheworld.com/api/livestream-redirect/WTTSAAC.aac` |
 | Sacred Heart Catholic Radio (WNOP 740 AM) | `https://ice10.securenetsystems.net/WNOP2` |
+| Tree Country 1330 (WTRE) | `https://wtre.streamguys1.com/live` |
 
 ## Adding a station
 

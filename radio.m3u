@@ -3,3 +3,5 @@
 https://playerservices.streamtheworld.com/api/livestream-redirect/WTTSAAC.aac
 #EXTINF:-1 tvg-logo="https://kennystier.github.io/radiobrowser/logos/sacred-heart-radio.png" group-title="Radio",Sacred Heart Catholic Radio (WNOP 740 AM)
 https://ice10.securenetsystems.net/WNOP2
+#EXTINF:-1 tvg-logo="https://kennystier.github.io/radiobrowser/logos/wtre.png" group-title="Radio",Tree Country 1330 (WTRE)
+https://wtre.streamguys1.com/live

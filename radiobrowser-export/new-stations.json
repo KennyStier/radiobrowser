@@ -8,8 +8,8 @@
     "countrycode": "US",
     "iso_3166_2": "US-IN",
     "languagecodes": "EN",
-    "geo_lat": 39.4162,
-    "geo_long": -86.1508
+    "geo_lat": 39.7816,
+    "geo_long": -86.162
   },
   {
     "name": "Tree Country 1330 WTRE - Greensburg, IN",
@@ -20,8 +20,8 @@
     "countrycode": "US",
     "iso_3166_2": "US-IN",
     "languagecodes": "EN",
-    "geo_lat": 39.3373,
-    "geo_long": -85.4836
+    "geo_lat": 39.3288,
+    "geo_long": -85.5006
   },
   {
     "name": "Ave Maria Radio - Ann Arbor, MI",
@@ -32,8 +32,8 @@
     "countrycode": "US",
     "iso_3166_2": "US-MI",
     "languagecodes": "EN",
-    "geo_lat": 42.2814,
-    "geo_long": -83.7485
+    "geo_lat": 42.3162,
+    "geo_long": -83.6828
   },
   {
     "name": "106.1 The River WWWY - Columbus, IN",
@@ -44,8 +44,8 @@
     "countrycode": "US",
     "iso_3166_2": "US-IN",
     "languagecodes": "EN",
-    "geo_lat": 39.0062,
-    "geo_long": -85.6236
+    "geo_lat": 39.2329,
+    "geo_long": -85.9216
   },
   {
     "name": "WRBI 103.9 - Batesville, IN",
@@ -56,7 +56,7 @@
     "countrycode": "US",
     "iso_3166_2": "US-IN",
     "languagecodes": "EN",
-    "geo_lat": 39.3,
-    "geo_long": -85.2222
+    "geo_lat": 39.2973,
+    "geo_long": -85.2235
   }
 ]

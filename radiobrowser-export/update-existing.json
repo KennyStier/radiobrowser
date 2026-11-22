@@ -1,5 +1,18 @@
 [
   {
+    "stationuuid": "c63b285c-6e95-4a8b-adfa-9dbc22cb7cfd",
+    "name": "92.3 WTTS - Indianapolis/Bloomington, IN",
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WTTSAAC.aac",
+    "homepage": "https://wttsfm.com",
+    "favicon": "https://kennystier.github.io/radiobrowser/logos/wtts.png",
+    "tags": "adult album alternative,aaa,rock",
+    "countrycode": "US",
+    "iso_3166_2": "US-IN",
+    "languagecodes": "EN",
+    "geo_lat": 39.7816,
+    "geo_long": -86.162
+  },
+  {
     "stationuuid": "961fa669-0601-11e8-ae97-52543be04c81",
     "name": "WNOP 740 Sacred Heart Radio - Cincinnati, OH",
     "url": "https://ice10.securenetsystems.net/WNOP2",
@@ -13,8 +26,34 @@
     "geo_long": -84.5119
   },
   {
+    "stationuuid": "36dbd9a6-7dd4-4685-98cf-c1ac7a8962ed",
+    "name": "Tree Country 1330 WTRE - Greensburg, IN",
+    "url": "https://wtre.streamguys1.com/live",
+    "homepage": "https://www.wtreradio.com",
+    "favicon": "https://kennystier.github.io/radiobrowser/logos/wtre.png",
+    "tags": "country,local news,community",
+    "countrycode": "US",
+    "iso_3166_2": "US-IN",
+    "languagecodes": "EN",
+    "geo_lat": 39.3288,
+    "geo_long": -85.5006
+  },
+  {
+    "stationuuid": "51d98ee3-0df5-45c3-8bbf-f9df389b9fc6",
+    "name": "Ave Maria Radio - Ann Arbor, MI",
+    "url": "https://streaming.live365.com/a57262",
+    "homepage": "https://www.avemariaradio.net",
+    "favicon": "https://kennystier.github.io/radiobrowser/logos/ave-maria-radio.png",
+    "tags": "catholic,christian,religious,talk",
+    "countrycode": "US",
+    "iso_3166_2": "US-MI",
+    "languagecodes": "EN",
+    "geo_lat": 42.3162,
+    "geo_long": -83.6828
+  },
+  {
     "stationuuid": "4df59538-4c43-4db5-95b9-e0d09e804bde",
-    "name": "WBAA Classical 105.9 FM / 101.3 HD-2 - West Lafayette, IN",
+    "name": "WBAA Classical - West Lafayette, IN",
     "url": "https://wfyi-live.streamguys1.com/wbaa-classical-aac",
     "homepage": "https://www.wbaa.org",
     "favicon": "https://kennystier.github.io/radiobrowser/logos/wbaa-classical.png",
@@ -27,7 +66,7 @@
   },
   {
     "stationuuid": "960b39cb-0601-11e8-ae97-52543be04c81",
-    "name": "WBAA Jazz 101.3 HD-3 - West Lafayette, IN",
+    "name": "WBAA Jazz - West Lafayette, IN",
     "url": "https://wfyi-live.streamguys1.com/wbaa-jazz-aac",
     "homepage": "https://www.wbaa.org/wbaa-jazz",
     "favicon": "https://kennystier.github.io/radiobrowser/logos/wbaa-jazz.png",
@@ -50,5 +89,31 @@
     "languagecodes": "EN",
     "geo_lat": 39.7802,
     "geo_long": -86.1568
+  },
+  {
+    "stationuuid": "ef9e05e1-5717-4a44-81bc-373f2c9a9d4e",
+    "name": "106.1 The River WWWY - Columbus, IN",
+    "url": "https://live.amperwave.net/direct/findlay-wwwyfmmp3-ibc3",
+    "homepage": "https://www.1061theriver.com",
+    "favicon": "https://kennystier.github.io/radiobrowser/logos/wwwy.png",
+    "tags": "classic hits,classic rock",
+    "countrycode": "US",
+    "iso_3166_2": "US-IN",
+    "languagecodes": "EN",
+    "geo_lat": 39.2329,
+    "geo_long": -85.9216
+  },
+  {
+    "stationuuid": "436cd294-c7dc-4cc1-b1fe-1caf747bf0db",
+    "name": "WRBI 103.9 - Batesville, IN",
+    "url": "https://ice41.securenetsystems.net/WRBI",
+    "homepage": "https://wrbiradio.com",
+    "favicon": "https://kennystier.github.io/radiobrowser/logos/wrbi.png",
+    "tags": "country,local news",
+    "countrycode": "US",
+    "iso_3166_2": "US-IN",
+    "languagecodes": "EN",
+    "geo_lat": 39.2973,
+    "geo_long": -85.2235
   }
 ]

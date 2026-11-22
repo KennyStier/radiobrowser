@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radio Streams</title>
+<meta name="description" content="Working stream URLs and square logos for a few radio stations, for Music Assistant, RadioBrowser and other players.">
+<style>
+  :root {
+    --bg: #f6f5f2; --card: #ffffff; --text: #1d1d1f; --muted: #6b6b70;
+    --line: #e3e1dc; --accent: #2f6f4f; --accent-text: #ffffff; --code: #f0eee9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141416; --card: #1e1e21; --text: #ececee; --muted: #9a9aa2;
+      --line: #2e2e33; --accent: #6fbf8f; --accent-text: #0f1a14; --code: #26262a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 1.75rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .lede { color: var(--muted); margin: 0 0 28px; }
+  .lede a, footer a { color: var(--accent); }
+  .station {
+    display: grid; grid-template-columns: 112px 1fr; gap: 20px;
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 20px; margin-bottom: 16px;
+  }
+  .station img {
+    width: 112px; height: 112px; border-radius: 12px; object-fit: cover;
+    border: 1px solid var(--line); background: #fff;
+  }
+  .station h2 { font-size: 1.15rem; margin: 0; }
+  .tagline { color: var(--muted); margin: 2px 0 10px; font-size: .95rem; }
+  .meta { color: var(--muted); font-size: .85rem; margin-bottom: 12px; }
+  .row { display: flex; gap: 8px; align-items: center; margin: 6px 0; min-width: 0; }
+  .row label { width: 52px; flex: none; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; }
+  .row code {
+    flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    background: var(--code); border-radius: 6px; padding: 4px 8px; font-size: .82rem;
+  }
+  button, .btn {
+    flex: none; border: 1px solid var(--line); background: var(--card); color: var(--text);
+    border-radius: 8px; padding: 4px 10px; font: inherit; font-size: .82rem; cursor: pointer;
+    text-decoration: none;
+  }
+  button:hover, .btn:hover { border-color: var(--accent); }
+  button.play { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  footer { color: var(--muted); font-size: .85rem; margin-top: 32px; }
+  @media (max-width: 520px) {
+    .station { grid-template-columns: 1fr; }
+    .station img { width: 96px; height: 96px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Radio Streams</h1>
+  <p class="lede">Working stream URLs and square logos for stations we listen to. Paste a stream or logo URL into
+    <a href="https://music-assistant.io">Music Assistant</a> or any other player, or download the whole
+    <a href="radio.m3u">radio.m3u</a> playlist.</p>
+  <div id="list"><p class="lede">Loading…</p></div>
+  <footer>
+    Logos belong to their stations and are shown here only to identify them.
+    Source: <a href="stations.json">stations.json</a>.
+  </footer>
+</main>
+<script>
+const list = document.getElementById('list');
+let audio = null, playingBtn = null;
+
+function el(tag, attrs = {}, ...kids) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === 'onclick') e.onclick = v; else e.setAttribute(k, v);
+  }
+  for (const k of kids) e.append(k);
+  return e;
+}
+
+function copyRow(label, value) {
+  const btn = el('button', { type: 'button' }, 'Copy');
+  btn.onclick = async () => {
+    try { await navigator.clipboard.writeText(value); btn.textContent = 'Copied'; }
+    catch { btn.textContent = 'Select & copy'; }
+    setTimeout(() => (btn.textContent = 'Copy'), 1500);
+  };
+  return el('div', { class: 'row' }, el('label', {}, label), el('code', { title: value }, value), btn);
+}
+
+function togglePlay(btn, url) {
+  if (playingBtn === btn) { audio.pause(); audio = null; btn.textContent = '▶ Listen'; playingBtn = null; return; }
+  if (audio) { audio.pause(); playingBtn.textContent = '▶ Listen'; }
+  audio = new Audio(url); audio.play().catch(() => { btn.textContent = 'Can’t play here'; });
+  btn.textContent = '■ Stop'; playingBtn = btn;
+}
+
+fetch('stations.json').then(r => r.json()).then(data => {
+  const base = new URL('.', location.href).href;
+  list.replaceChildren();
+  for (const s of data.stations) {
+    const logoUrl = new URL(s.logo, base).href;
+    const play = el('button', { type: 'button', class: 'play' }, '▶ Listen');
+    play.onclick = () => togglePlay(play, s.stream);
+    list.append(el('article', { class: 'station', id: s.id },
+      el('img', { src: s.logo, alt: `${s.name} logo`, width: 112, height: 112 }),
+      el('div', {},
+        el('h2', {}, s.name),
+        el('p', { class: 'tagline' }, s.tagline || ''),
+        el('div', { class: 'meta' }, [s.codec, s.bitrate && `${s.bitrate} kbps`, s.state, ...(s.tags || []).slice(0, 3)].filter(Boolean).join(' · ')),
+        copyRow('Stream', s.stream),
+        copyRow('Logo', logoUrl),
+        el('div', { class: 'actions' }, play, el('a', { class: 'btn', href: s.homepage, rel: 'noopener' }, 'Station website'))
+      )
+    ));
+  }
+}).catch(() => { list.textContent = 'Could not load stations.json.'; });
+</script>
+</body>
+</html>

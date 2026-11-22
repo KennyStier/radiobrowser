@@ -1,0 +1,37 @@
+{
+  "base_url": "https://kennystier.github.io/radiobrowser/",
+  "stations": [
+    {
+      "id": "wtts",
+      "name": "92.3 WTTS",
+      "tagline": "Experience the music.",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/WTTSAAC.aac",
+      "codec": "AAC",
+      "bitrate": 128,
+      "homepage": "https://wttsfm.com",
+      "logo": "logos/wtts.png",
+      "logo_source": "WTTS app icon on Google Play",
+      "country": "US",
+      "state": "Indiana",
+      "language": "english",
+      "tags": ["adult album alternative", "aaa", "rock"],
+      "notes": "StreamTheWorld redirect URL; it picks a live relay server on each connect. Never save a numbered NNNNN.live.streamtheworld.com address, because those stop working."
+    },
+    {
+      "id": "sacred-heart-radio",
+      "name": "Sacred Heart Catholic Radio (WNOP 740 AM)",
+      "tagline": "740 AM & 910 AM, Cincinnati / Middletown / Dayton",
+      "stream": "https://ice10.securenetsystems.net/WNOP2",
+      "codec": "AAC",
+      "bitrate": 64,
+      "homepage": "https://www.sacredheartradio.com",
+      "logo": "logos/sacred-heart-radio.png",
+      "logo_source": "Emblem cropped from the station's 2024 logo on sacredheartradio.com",
+      "country": "US",
+      "state": "Kentucky",
+      "language": "english",
+      "tags": ["catholic", "christian", "religious", "talk", "ewtn"],
+      "notes": "Licensed to Newport, KY; serves the Cincinnati area."
+    }
+  ]
+}
